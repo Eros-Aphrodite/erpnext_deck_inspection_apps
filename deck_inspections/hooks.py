@@ -11,15 +11,15 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "deck_inspections",
-# 		"logo": "/assets/deck_inspections/logo.png",
-# 		"title": "Deck Inspections",
-# 		"route": "/deck_inspections",
-# 		"has_permission": "deck_inspections.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "deck_inspections",
+		"logo": "/assets/deck_inspections/images/deck-inspections-icon.png?v=2",
+		"title": "Deck Inspections",
+		"route": "/app/deck-inspection",
+		"description": "Deck inspection management",
+	}
+]
 
 # Includes in <head>
 # ------------------
