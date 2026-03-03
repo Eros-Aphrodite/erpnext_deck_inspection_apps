@@ -2,6 +2,19 @@
 
 Deck inspection management
 
+### Goals
+
+- Provide a **single, easy-to-complete Deck Inspection form** for deck renovation and inspection scope checks
+- Capture **contact details**, **date**, **responsible user**, and **tags** for each inspection
+- Track workflow status: **New** → **In Progress** → **Done**
+- Organize inspection details by **Deck** and **Roof** tabs
+- Allow free-form **notes** for documenting findings and specifications
+
+### What's included
+
+- `Deck Inspection` DocType with Details (contact, date, status, notes) and tabbed layout (Deck, Roof)
+- Desk route shortcut to open the DocType at `/app/deck-inspection`
+
 ### Installation
 
 You can install this app using the [bench](https://github.com/frappe/bench) CLI:
