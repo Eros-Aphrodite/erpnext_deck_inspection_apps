@@ -81,6 +81,28 @@
   "new_image_5",
   "new_image_6",
   "tab_roof",
+  "section_roof",
+  "roof_selection",
+  "roof_length",
+  "roof_width",
+  "roof_colour",
+  "roof_barge",
+  "roof_barge_length",
+  "roof_flashing",
+  "roof_flashing_length",
+  "roof_post",
+  "roof_post_no",
+  "roof_beam",
+  "roof_beam_no",
+  "roof_gutter",
+  "roof_gutter_no",
+  "roof_gutter_length",
+  "roof_downpipe",
+  "roof_downpipe_length",
+  "roof_image_1",
+  "roof_image_2",
+  "roof_image_3",
+  "roof_image_4",
   "roof_notes"
  ],
  "fields": [
@@ -525,6 +547,139 @@
    "fieldname": "tab_roof",
    "fieldtype": "Tab Break",
    "label": "Roof"
+  },
+  {
+   "fieldname": "section_roof",
+   "fieldtype": "Section Break",
+   "label": "Roof"
+  },
+  {
+   "fieldname": "roof_selection",
+   "fieldtype": "Select",
+   "label": "Roof Selection",
+   "options": "Corrugated Roof\nInsulated Roof 75mm\nInsulated Roof 100mm"
+  },
+  {
+   "default": "0",
+   "fieldname": "roof_length",
+   "fieldtype": "Float",
+   "label": "Length",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "roof_width",
+   "fieldtype": "Float",
+   "label": "Width",
+   "precision": 2
+  },
+  {
+   "fieldname": "roof_colour",
+   "fieldtype": "Select",
+   "label": "Colour",
+   "options": "Colourbond Surfmist\nColourbond Monument\nColourbond Classic Cream\nColourbond Shale Grey\nColourbond Ironstone\nColourbond Manor Red\nColourbond Cottage Cream\nColourbond Pale eucalypt\nColourbond Basalt\nColourbond Bluegum\nColourbond Paperbark\nColourbond Dune\nColourbond Dove White"
+  },
+  {
+   "default": "0",
+   "fieldname": "roof_barge",
+   "fieldtype": "Check",
+   "label": "Barge"
+  },
+  {
+   "default": "0",
+   "fieldname": "roof_barge_length",
+   "fieldtype": "Float",
+   "label": "Length",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "roof_flashing",
+   "fieldtype": "Check",
+   "label": "Roof Flashing"
+  },
+  {
+   "default": "0",
+   "fieldname": "roof_flashing_length",
+   "fieldtype": "Float",
+   "label": "Length",
+   "precision": 2
+  },
+  {
+   "fieldname": "roof_post",
+   "fieldtype": "Select",
+   "label": "Post",
+   "options": "Steel Post 75x75\nTimber Post 90x90\nTimber Post 100x100\nTimber Post 140x140"
+  },
+  {
+   "fieldname": "roof_post_no",
+   "fieldtype": "Select",
+   "label": "No:",
+   "options": "1\n2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "roof_beam",
+   "fieldtype": "Select",
+   "label": "Beam",
+   "options": "Timber Beam 140x45\nTimber Beam 190x45\nMetal Beam 150x60\nMetal Beam 200x60"
+  },
+  {
+   "fieldname": "roof_beam_no",
+   "fieldtype": "Select",
+   "label": "No:",
+   "options": "1\n2\n3"
+  },
+  {
+   "default": "0",
+   "fieldname": "roof_gutter",
+   "fieldtype": "Check",
+   "label": "Gutter"
+  },
+  {
+   "fieldname": "roof_gutter_no",
+   "fieldtype": "Select",
+   "label": "No:",
+   "options": "1\n2\n3"
+  },
+  {
+   "default": "0",
+   "fieldname": "roof_gutter_length",
+   "fieldtype": "Float",
+   "label": "Length",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "roof_downpipe",
+   "fieldtype": "Check",
+   "label": "Downpipe"
+  },
+  {
+   "default": "0",
+   "fieldname": "roof_downpipe_length",
+   "fieldtype": "Float",
+   "label": "Length",
+   "precision": 2
+  },
+  {
+   "fieldname": "roof_image_1",
+   "fieldtype": "Attach Image",
+   "label": "New Image 1"
+  },
+  {
+   "fieldname": "roof_image_2",
+   "fieldtype": "Attach Image",
+   "label": "New Image 2"
+  },
+  {
+   "fieldname": "roof_image_3",
+   "fieldtype": "Attach Image",
+   "label": "New Image 3"
+  },
+  {
+   "fieldname": "roof_image_4",
+   "fieldtype": "Attach Image",
+   "label": "New Image 4"
   },
   {
    "fieldname": "roof_notes",
