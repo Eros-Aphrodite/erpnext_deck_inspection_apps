@@ -8,16 +8,78 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
+  "column_contact",
   "contact",
   "phone",
   "email",
   "date",
+  "notes",
+  "column_responsible",
   "responsible",
   "tags",
   "status",
-  "notes",
   "tab_deck",
-  "deck_notes",
+  "section_deck",
+  "decking",
+  "decking_90x19",
+  "decking_400x400",
+  "replace_joist",
+  "replace_joist_no",
+  "replace_joist_length",
+  "deck_width",
+  "lower",
+  "high",
+  "timber_post",
+  "verandah_timber",
+  "verandah_aluminium",
+  "verandah_glass",
+  "verandah_screen",
+  "new_selection",
+  "roof_corrugated",
+  "roof_corrugated_length",
+  "roof_corrugated_width",
+  "down_lights",
+  "ceiling_fan",
+  "fc_ceiling",
+  "fc_ceiling_length",
+  "fc_ceiling_width",
+  "stairs",
+  "no_of_steps",
+  "stair_height",
+  "stair_width",
+  "notes_1",
+  "notes_2",
+  "notes_3",
+  "notes_4",
+  "column_right",
+  "type",
+  "decking_140x19",
+  "decking_600x600",
+  "replace_post",
+  "replace_post_no",
+  "replace_post_length",
+  "deck_length",
+  "height_1",
+  "height_2",
+  "steel_post",
+  "verandah_length",
+  "screen_length",
+  "screen_width",
+  "roof_insulated",
+  "roof_insulated_length",
+  "roof_insulated_width",
+  "plasterboard_ceiling",
+  "new_opening",
+  "opening_type",
+  "opening_height",
+  "opening_width",
+  "section_images",
+  "new_image_1",
+  "new_image_2",
+  "new_image_3",
+  "new_image_4",
+  "new_image_5",
+  "new_image_6",
   "tab_roof",
   "roof_notes"
  ],
@@ -29,6 +91,10 @@
    "hidden": 1,
    "label": "Series",
    "options": "DINS-.YYYY.-"
+  },
+  {
+   "fieldname": "column_contact",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "contact",
@@ -52,6 +118,16 @@
    "label": "Date"
   },
   {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes",
+   "description": "Type down your notes here..."
+  },
+  {
+   "fieldname": "column_responsible",
+   "fieldtype": "Column Break"
+  },
+  {
    "fieldname": "responsible",
    "fieldtype": "Link",
    "label": "Responsible",
@@ -71,20 +147,379 @@
    "options": "New\nIn Progress\nDone"
   },
   {
-   "fieldname": "notes",
-   "fieldtype": "Small Text",
-   "label": "Notes",
-   "description": "Type down your notes here..."
-  },
-  {
    "fieldname": "tab_deck",
    "fieldtype": "Tab Break",
    "label": "Deck"
   },
   {
-   "fieldname": "deck_notes",
+   "fieldname": "section_deck",
+   "fieldtype": "Section Break",
+   "label": "Deck"
+  },
+  {
+   "fieldname": "decking",
+   "fieldtype": "Select",
+   "label": "Decking",
+   "options": "Merbau\nComposite\nPine\nTiles"
+  },
+  {
+   "default": "0",
+   "fieldname": "decking_90x19",
+   "fieldtype": "Check",
+   "label": "90x19"
+  },
+  {
+   "default": "0",
+   "fieldname": "decking_400x400",
+   "fieldtype": "Check",
+   "label": "400x400"
+  },
+  {
+   "default": "0",
+   "fieldname": "replace_joist",
+   "fieldtype": "Check",
+   "label": "Replace Joist?"
+  },
+  {
+   "fieldname": "replace_joist_no",
+   "fieldtype": "Select",
+   "label": "No:",
+   "options": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n15+"
+  },
+  {
+   "default": "0",
+   "fieldname": "replace_joist_length",
+   "fieldtype": "Float",
+   "label": "Length",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "deck_width",
+   "fieldtype": "Float",
+   "label": "Deck Width",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "lower",
+   "fieldtype": "Check",
+   "label": "Lower"
+  },
+  {
+   "default": "0",
+   "fieldname": "high",
+   "fieldtype": "Check",
+   "label": "High"
+  },
+  {
+   "default": "0",
+   "fieldname": "timber_post",
+   "fieldtype": "Check",
+   "label": "Timber Post"
+  },
+  {
+   "default": "0",
+   "fieldname": "verandah_timber",
+   "fieldtype": "Check",
+   "label": "Verandah Timber"
+  },
+  {
+   "default": "0",
+   "fieldname": "verandah_aluminium",
+   "fieldtype": "Check",
+   "label": "Verandah Aluminium"
+  },
+  {
+   "default": "0",
+   "fieldname": "verandah_glass",
+   "fieldtype": "Check",
+   "label": "Verandah Glass"
+  },
+  {
+   "default": "0",
+   "fieldname": "verandah_screen",
+   "fieldtype": "Check",
+   "label": "Verandah Screen"
+  },
+  {
+   "fieldname": "new_selection",
+   "fieldtype": "Select",
+   "label": "New Selection",
+   "options": "Timber Paling\nComposite Paling\nTrellis\nAluminum\nBamboo\nLaser Cut Metal\nModular Plastic\nLattice"
+  },
+  {
+   "default": "0",
+   "fieldname": "roof_corrugated",
+   "fieldtype": "Check",
+   "label": "Roof Corrugated"
+  },
+  {
+   "default": "0",
+   "fieldname": "roof_corrugated_length",
+   "fieldtype": "Float",
+   "label": "Length",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "roof_corrugated_width",
+   "fieldtype": "Float",
+   "label": "Width",
+   "precision": 2
+  },
+  {
+   "fieldname": "down_lights",
+   "fieldtype": "Select",
+   "label": "Down Lights",
+   "options": "1\n2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "ceiling_fan",
+   "fieldtype": "Select",
+   "label": "Ceiling Fan",
+   "options": "1\n2\n3\n4"
+  },
+  {
+   "default": "0",
+   "fieldname": "fc_ceiling",
+   "fieldtype": "Check",
+   "label": "FC Ceiling"
+  },
+  {
+   "default": "0",
+   "fieldname": "fc_ceiling_length",
+   "fieldtype": "Float",
+   "label": "Length",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "fc_ceiling_width",
+   "fieldtype": "Float",
+   "label": "Width",
+   "precision": 2
+  },
+  {
+   "fieldname": "stairs",
+   "fieldtype": "Select",
+   "label": "Stairs",
+   "options": "Timber\nComposite\nTiles\nAluminum"
+  },
+  {
+   "fieldname": "no_of_steps",
+   "fieldtype": "Select",
+   "label": "No of Steps",
+   "options": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n15+"
+  },
+  {
+   "default": "0",
+   "fieldname": "stair_height",
+   "fieldtype": "Float",
+   "label": "Height",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "stair_width",
+   "fieldtype": "Float",
+   "label": "Width",
+   "precision": 2
+  },
+  {
+   "fieldname": "notes_1",
    "fieldtype": "Small Text",
-   "label": "Deck Notes"
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes_2",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes_3",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes_4",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "column_right",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "New Deck\nReplace Decking Board\nRepair"
+  },
+  {
+   "default": "0",
+   "fieldname": "decking_140x19",
+   "fieldtype": "Check",
+   "label": "140x19"
+  },
+  {
+   "default": "0",
+   "fieldname": "decking_600x600",
+   "fieldtype": "Check",
+   "label": "600x600"
+  },
+  {
+   "default": "0",
+   "fieldname": "replace_post",
+   "fieldtype": "Check",
+   "label": "Replace Post?"
+  },
+  {
+   "fieldname": "replace_post_no",
+   "fieldtype": "Select",
+   "label": "No:",
+   "options": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "default": "0",
+   "fieldname": "replace_post_length",
+   "fieldtype": "Float",
+   "label": "Length",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "deck_length",
+   "fieldtype": "Float",
+   "label": "Deck Length",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "height_1",
+   "fieldtype": "Float",
+   "label": "Height",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "height_2",
+   "fieldtype": "Float",
+   "label": "Height",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "steel_post",
+   "fieldtype": "Check",
+   "label": "Steel Post"
+  },
+  {
+   "default": "0",
+   "fieldname": "verandah_length",
+   "fieldtype": "Float",
+   "label": "Verandah Length",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "screen_length",
+   "fieldtype": "Float",
+   "label": "Screen Length",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "screen_width",
+   "fieldtype": "Float",
+   "label": "Screen Width",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "roof_insulated",
+   "fieldtype": "Check",
+   "label": "Roof Insulated"
+  },
+  {
+   "default": "0",
+   "fieldname": "roof_insulated_length",
+   "fieldtype": "Float",
+   "label": "Length",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "roof_insulated_width",
+   "fieldtype": "Float",
+   "label": "Width",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "plasterboard_ceiling",
+   "fieldtype": "Check",
+   "label": "Plasterboard Ceiling"
+  },
+  {
+   "fieldname": "new_opening",
+   "fieldtype": "Select",
+   "label": "New Opening",
+   "options": "Door\nWindow"
+  },
+  {
+   "fieldname": "opening_type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "New sliding Aluminum\nNew Folding Aluminum\nNew Sliding Timber\nNew Folding timber\nNew Double Glass Timber\nNew Single Glass\nNew Double Glass with Side Glass\nNew Single Glass with Side Glass"
+  },
+  {
+   "default": "0",
+   "fieldname": "opening_height",
+   "fieldtype": "Float",
+   "label": "Height",
+   "precision": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "opening_width",
+   "fieldtype": "Float",
+   "label": "Width",
+   "precision": 2
+  },
+  {
+   "fieldname": "section_images",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "new_image_1",
+   "fieldtype": "Attach Image",
+   "label": "New Image 1"
+  },
+  {
+   "fieldname": "new_image_2",
+   "fieldtype": "Attach Image",
+   "label": "New Image 2"
+  },
+  {
+   "fieldname": "new_image_3",
+   "fieldtype": "Attach Image",
+   "label": "New Image 3"
+  },
+  {
+   "fieldname": "new_image_4",
+   "fieldtype": "Attach Image",
+   "label": "New Image 4"
+  },
+  {
+   "fieldname": "new_image_5",
+   "fieldtype": "Attach Image",
+   "label": "New Image 5"
+  },
+  {
+   "fieldname": "new_image_6",
+   "fieldtype": "Attach Image",
+   "label": "New Image 6"
   },
   {
    "fieldname": "tab_roof",
